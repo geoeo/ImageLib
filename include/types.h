@@ -11,8 +11,8 @@ enum ImageFilter : uint8_t {
     NoFilter,
     SobelX,
     SobelY,
-    ScharrX,
-    ScharrY
+    RotInvX,
+    RotInvY
 };
 
 enum ImageEncoding : uint8_t {
@@ -25,5 +25,20 @@ enum ImageEncoding : uint8_t {
 };
 
 typedef double image_data;
+
+// CImage typedefs
+
+//-1 = Backward finite differences
+//0 = Centered finite differences
+//1 = Forward finite differences
+//2 = Using Sobel kernels
+//3 = Using rotation invariant kernels
+//4 = Using Deriche recusrsive filter.
+//5 = Using Van Vliet recusrsive filter.
+
+// 0: Second moment,
+//1: Best unbiased estimator
+//2: Least median of squares.
+//3: Least trimmed of squares.
 
 #endif //IMAGELIB_TYPES_H

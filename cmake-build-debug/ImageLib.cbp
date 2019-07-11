@@ -111,9 +111,6 @@
 		<Unit filename="/Users/marchaubenstock/Workspace/C++/ImageLib/src/image.cpp">
 			<Option target="ImageLib"/>
 		</Unit>
-		<Unit filename="/Users/marchaubenstock/Workspace/C++/ImageLib/src/numerics.cpp">
-			<Option target="ImageLib"/>
-		</Unit>
 		<Unit filename="/Users/marchaubenstock/Workspace/C++/ImageLib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

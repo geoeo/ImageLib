@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/marchaubenstock/Workspace/C++/ImageLib/main.cpp" "/Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles/ImageLib.dir/main.cpp.o"
   "/Users/marchaubenstock/Workspace/C++/ImageLib/src/image.cpp" "/Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles/ImageLib.dir/src/image.cpp.o"
-  "/Users/marchaubenstock/Workspace/C++/ImageLib/src/numerics.cpp" "/Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles/ImageLib.dir/src/numerics.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

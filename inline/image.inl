@@ -69,10 +69,10 @@ template <typename T> inline CImg<image_data> Image::filter(ImageFilter image_fi
         case ImageFilter::SobelY:
             filtered_image = c_image.get_gradient("y",2)[0];
             break;
-        case ImageFilter::ScharrX:
+        case ImageFilter::RotInvX:
             filtered_image = c_image.get_gradient("x",3)[0];
             break;
-        case ImageFilter::ScharrY:
+        case ImageFilter::RotInvY:
             filtered_image = c_image.get_gradient("y",3)[0];
             break;
     }

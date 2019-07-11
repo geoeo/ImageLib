@@ -177,33 +177,6 @@ src/image.cpp.s:
 	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/src/image.cpp.s
 .PHONY : src/image.cpp.s
 
-src/numerics.o: src/numerics.cpp.o
-
-.PHONY : src/numerics.o
-
-# target to build an object file
-src/numerics.cpp.o:
-	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/src/numerics.cpp.o
-.PHONY : src/numerics.cpp.o
-
-src/numerics.i: src/numerics.cpp.i
-
-.PHONY : src/numerics.i
-
-# target to preprocess a source file
-src/numerics.cpp.i:
-	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/src/numerics.cpp.i
-.PHONY : src/numerics.cpp.i
-
-src/numerics.s: src/numerics.cpp.s
-
-.PHONY : src/numerics.s
-
-# target to generate assembly for a file
-src/numerics.cpp.s:
-	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/src/numerics.cpp.s
-.PHONY : src/numerics.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,9 +192,6 @@ help:
 	@echo "... src/image.o"
 	@echo "... src/image.i"
 	@echo "... src/image.s"
-	@echo "... src/numerics.o"
-	@echo "... src/numerics.i"
-	@echo "... src/numerics.s"
 .PHONY : help
 
 

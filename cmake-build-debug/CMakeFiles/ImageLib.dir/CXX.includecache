@@ -168,6 +168,12 @@ image.h
 CImg.h
 /Users/marchaubenstock/Workspace/C++/ImageLib/CImg.h
 
+/Users/marchaubenstock/Workspace/C++/ImageLib/src/image.cpp
+image.h
+/Users/marchaubenstock/Workspace/C++/ImageLib/src/image.h
+numerics.h
+/Users/marchaubenstock/Workspace/C++/ImageLib/src/numerics.h
+
 /opt/X11/include/X11/X.h
 X11/Xmd.h
 -
