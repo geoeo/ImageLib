@@ -10,18 +10,30 @@ using namespace cimg_library;
 constexpr std::string_view get_data_path() {return "/Users/marchaubenstock/Workspace/C++/ImageLib/data/";}
 
 int main() {
-    std::stringstream ss;
-    ss << get_data_path() << "lena.png";
-    auto image_path = ss.str();
-    auto image_path_c_str = image_path.c_str();
+    std::string lena = "lena.png";
+    std::string depth = "depth.png";
 
-    CImg<unsigned char> image(image_path_c_str);
+    std::stringstream ss_lena;
+    ss_lena << get_data_path() << lena;
+    auto image_path_lena = ss_lena.str();
+    auto image_path_lena_c_str = image_path_lena.c_str();
+
+    std::stringstream ss_depth;
+    ss_depth << get_data_path() << depth;
+    auto image_path_depth = ss_depth.str();
+    auto image_path_depth_c_str = image_path_depth.c_str();
+
+    CImg<unsigned char> image(image_path_lena_c_str);
+    CImg<short> image_depth(image_path_depth_c_str);
     CImg<unsigned char> gray = Image::CImg_RGB_to_Gray(0.33, 0.33, 0.33, image);
 
     auto my_image = Image::from_CImg(true,ImageFilter::SobelY, gray);
-    auto disp_image = Image::to_CImg(my_image);
+    auto my_depth_image = Image::from_CImg(true,ImageFilter::NoFilter, image_depth);
 
-    CImgDisplay main_disp(image,"Original"),draw_disp(disp_image,"Gray");
+    auto disp_image = Image::to_CImg_U8(my_image);
+    auto disp_depth_image = Image::to_CImg_U8(my_depth_image);
+
+    CImgDisplay main_disp(image_depth,"Original"),draw_disp(disp_depth_image,"Converted");
 
 
     while (!main_disp.is_closed() && !draw_disp.is_closed()) {

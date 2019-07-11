@@ -18,7 +18,7 @@ unsigned char Image::normalize_pixel_to_display(image_data min, image_data max, 
 
 
 
-CImg<unsigned char> Image::to_CImg(const Image &image) {
+CImg<unsigned char> Image::to_CImg_U8(const Image &image) {
     auto image_matrix = &image.image_matrix;
     auto width = image_matrix->cols();
     auto height = image_matrix->rows();
