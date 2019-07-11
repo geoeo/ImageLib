@@ -12,13 +12,14 @@
 
 using namespace Eigen;
 using namespace cimg_library;
+using namespace image_types;
 
 class Image {
 public:
     ImageEncoding original_encoding;
     ImageFilter image_filter;
     bool is_standardized;
-    Matrix<image_data, Dynamic, Dynamic> image_matrix;
+    Matrix<image_types::image_data, Dynamic, Dynamic> image_matrix;
 
     static unsigned char normalize_pixel_to_display(image_data min, image_data max, image_data value);
     template <typename T> static Image from_CImg(bool standardize, ImageFilter imageFilter, const CImg<T>& c_image);

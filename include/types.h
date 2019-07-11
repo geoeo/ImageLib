@@ -24,7 +24,10 @@ enum ImageEncoding : uint8_t {
     F64
 };
 
-typedef double image_data;
+namespace image_types {
+    typedef double image_data;
+}
+
 
 // CImage typedefs
 
