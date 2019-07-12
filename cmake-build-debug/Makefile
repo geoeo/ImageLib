@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ImageLibTest
+
+# Build rule for target.
+ImageLibTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ImageLibTest
+.PHONY : ImageLibTest
+
+# fast build rule for target.
+ImageLibTest/fast:
+	$(MAKE) -f CMakeFiles/ImageLibTest.dir/build.make CMakeFiles/ImageLibTest.dir/build
+.PHONY : ImageLibTest/fast
+
+#=============================================================================
 # Target rules for targets named ImageLib
 
 # Build rule for target.
@@ -129,7 +142,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/ImageLibTest.dir/build.make CMakeFiles/ImageLibTest.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +151,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/ImageLibTest.dir/build.make CMakeFiles/ImageLibTest.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +160,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/ImageLibTest.dir/build.make CMakeFiles/ImageLibTest.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/image.o: src/image.cpp.o
@@ -185,6 +198,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... ImageLibTest"
 	@echo "... ImageLib"
 	@echo "... main.o"
 	@echo "... main.i"

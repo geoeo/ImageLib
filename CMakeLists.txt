@@ -21,7 +21,11 @@ include_directories(${X11_INCLUDE_DIR})
 SET( SYSTEM_LIBS ${SYSTEM_LIBS} ${X11_LIBRARIES} )
 
 
-add_executable(ImageLib main.cpp include/types.h src/image.cpp include/image.h include/numerics.h inline/image.inl inline/numerics.inl)
+add_library(ImageLib SHARED include/types.h src/image.cpp include/image.h include/numerics.h inline/image.inl inline/numerics.inl)
 
 target_link_libraries(ImageLib Eigen3::Eigen)
 target_link_libraries(ImageLib ${SYSTEM_LIBS} )
+
+add_executable(ImageLibTest main.cpp )
+
+target_link_libraries(ImageLibTest ImageLib)

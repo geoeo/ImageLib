@@ -1,3 +1,4 @@
 /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles/ImageLibTest.dir
 /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles/ImageLib.dir

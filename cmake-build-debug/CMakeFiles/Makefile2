@@ -65,13 +65,50 @@ CMAKE_SOURCE_DIR = /Users/marchaubenstock/Workspace/C++/ImageLib
 CMAKE_BINARY_DIR = /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/ImageLibTest.dir
+
+# All Build rule for target.
+CMakeFiles/ImageLibTest.dir/all: CMakeFiles/ImageLib.dir/all
+	$(MAKE) -f CMakeFiles/ImageLibTest.dir/build.make CMakeFiles/ImageLibTest.dir/depend
+	$(MAKE) -f CMakeFiles/ImageLibTest.dir/build.make CMakeFiles/ImageLibTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target ImageLibTest"
+.PHONY : CMakeFiles/ImageLibTest.dir/all
+
+# Include target in all.
+all: CMakeFiles/ImageLibTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ImageLibTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ImageLibTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/ImageLibTest.dir/rule
+
+# Convenience name for target.
+ImageLibTest: CMakeFiles/ImageLibTest.dir/rule
+
+.PHONY : ImageLibTest
+
+# clean rule for target.
+CMakeFiles/ImageLibTest.dir/clean:
+	$(MAKE) -f CMakeFiles/ImageLibTest.dir/build.make CMakeFiles/ImageLibTest.dir/clean
+.PHONY : CMakeFiles/ImageLibTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ImageLibTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ImageLib.dir
 
 # All Build rule for target.
 CMakeFiles/ImageLib.dir/all:
 	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/depend
 	$(MAKE) -f CMakeFiles/ImageLib.dir/build.make CMakeFiles/ImageLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target ImageLib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ImageLib"
 .PHONY : CMakeFiles/ImageLib.dir/all
 
 # Include target in all.
@@ -81,7 +118,7 @@ all: CMakeFiles/ImageLib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ImageLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ImageLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/marchaubenstock/Workspace/C++/ImageLib/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ImageLib.dir/rule

@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ImageLib.dir/main.cpp.o"
   "CMakeFiles/ImageLib.dir/src/image.cpp.o"
-  "ImageLib.pdb"
-  "ImageLib"
+  "libImageLib.pdb"
+  "libImageLib.dylib"
 )
 
 # Per-language clean rules from dependency scanning.
