@@ -15,9 +15,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Users/marchaubenstock/Workspace/C++/CImg-2.6.7"
   "../include"
   "../inline"
+  "/Users/marchaubenstock/Workspace/C++/CImg-2.6.7"
   "/opt/X11/include"
   "/usr/local/include/eigen3"
   )

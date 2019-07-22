@@ -27,13 +27,16 @@ int main() {
     CImg<short> image_depth(image_path_depth_c_str);
     CImg<unsigned char> gray = Image::CImg_RGB_to_Gray(0.33, 0.33, 0.33, image);
 
+    CImg<unsigned char> gray_blurred = Image::blur_downsample(gray,5.0);
+
     auto my_image = Image::from_CImg(true,ImageFilter::SobelY, gray);
     auto my_depth_image = Image::from_CImg(true,ImageFilter::NoFilter, image_depth);
 
     auto disp_image = Image::to_CImg_U8(my_image);
     auto disp_depth_image = Image::to_CImg_U8(my_depth_image);
 
-    CImgDisplay main_disp(image_depth,"Original"),draw_disp(disp_depth_image,"Converted");
+    //CImgDisplay main_disp(image_depth,"Original"),draw_disp(disp_depth_image,"Converted");
+    CImgDisplay main_disp(gray,"Original"),draw_disp(gray_blurred,"Blurred");
 
 
     while (!main_disp.is_closed() && !draw_disp.is_closed()) {

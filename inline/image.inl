@@ -102,3 +102,8 @@ template <typename T> inline CImg<T> Image::CImg_RGB_to_Gray(float r_coef, float
 
     return gray;
 }
+
+template <typename T> inline CImg<T> Image::blur_downsample(const CImg<T> &prev, float sigma) {
+    CImg<T> blurred = prev.get_blur(sigma,0,true);
+    return blurred.resize_halfXY();
+}

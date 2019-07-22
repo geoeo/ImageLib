@@ -5,13 +5,12 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package (Eigen3 3.3 REQUIRED NO_MODULE)
 
-set(CIMG_H_PATH ~/Workspace/C++/CImg-2.6.7)
-#set(CIMG_H_PATH ${PROJECT_SOURCE_DIR}/../CImg-2.6.7)
-include_directories( ${CIMG_H_PATH} )
-
 include_directories(include)
 include_directories(inline)
+
 # CImg specific stuff taken from the example CMake
+set(CIMG_H_PATH ~/Workspace/C++/CImg-2.6.7)
+include_directories( ${CIMG_H_PATH} )
 
 FIND_PACKAGE(X11)
 FIND_PACKAGE(Threads REQUIRED)

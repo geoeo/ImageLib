@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = -DImageLib_EXPORTS
 
-CXX_INCLUDES = -I/Users/marchaubenstock/Workspace/C++/CImg-2.6.7 -I/Users/marchaubenstock/Workspace/C++/ImageLib/include -I/Users/marchaubenstock/Workspace/C++/ImageLib/inline -I/opt/X11/include -isystem /usr/local/include/eigen3 
+CXX_INCLUDES = -I/Users/marchaubenstock/Workspace/C++/ImageLib/include -I/Users/marchaubenstock/Workspace/C++/ImageLib/inline -I/Users/marchaubenstock/Workspace/C++/CImg-2.6.7 -I/opt/X11/include -isystem /usr/local/include/eigen3 
 
